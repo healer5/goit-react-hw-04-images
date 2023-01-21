@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { AiOutlineSearch } from 'react-icons/ai';
 import { toast } from 'react-toastify';
 import {
   Header,
@@ -29,6 +30,7 @@ export const Searchbar = ({ onSubmit }) => {
     <Header>
       <SearchForm onSubmit={handleSubmit}>
         <SearchFormButton type="submit">
+          <AiOutlineSearch size={24} />
           <SearchFormLabel>Search</SearchFormLabel>
         </SearchFormButton>
 
